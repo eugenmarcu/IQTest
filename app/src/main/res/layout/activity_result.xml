@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/textView_congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations !!!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+         />
+
+    <TextView
+        android:id="@+id/textView_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You scored: 1 out of 4"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <TextView
+        android:id="@+id/textView_score_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are as smart as a chimp"
+        />
+    <ImageView
+        android:id="@+id/imageView_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/negative_result"
+         />
+</LinearLayout>
