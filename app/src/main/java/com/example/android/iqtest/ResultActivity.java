@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,9 +24,9 @@ public class ResultActivity extends Activity {
         score  = intent.getExtras().getInt("score");
 
         TextView textViewCongrats = findViewById(R.id.textView_congrats);
-        textViewCongrats.setText("Congratulations " + name + "!!!");
+        textViewCongrats.setText(getString(R.string.congrats) + name + "!!!");
         TextView textViewScore = findViewById(R.id.textView_score);
-        textViewScore.setText("You scored "+ score + " out of 8");
+        textViewScore.setText(getString(R.string.you_scored)+ score + getString(R.string.out_of));
         ImageView imageView = findViewById(R.id.imageView_result);
         TextView textViewScoreName = findViewById(R.id.textView_score_name);
         textViewScoreName.setVisibility(View.VISIBLE);
@@ -37,33 +38,43 @@ public class ResultActivity extends Activity {
                 break;
             case 1:
                 imageView.setImageResource(R.drawable.chimp);
-                textViewScoreName.setText("You are as smart as " + "a chimp");
+                textViewScoreName.setText(getString(R.string.you_smart) + getString(R.string.chimp));
             case 2:
                 imageView.setImageResource(R.drawable.chimp);
-                textViewScoreName.setText("You are as smart as " + "a chimp");
+                textViewScoreName.setText(getString(R.string.you_smart) + getString(R.string.chimp));
                 break;
             case 3:
                 imageView.setImageResource(R.drawable.trump);
-                textViewScoreName.setText("You are as smart as " + "Donald Trump");
+                textViewScoreName.setText(getString(R.string.you_smart) + getString(R.string.donald));
             case 4:
                 imageView.setImageResource(R.drawable.trump);
-                textViewScoreName.setText("You are as smart as " + "Donald Trump");
+                textViewScoreName.setText(getString(R.string.you_smart) + getString(R.string.donald));
                 break;
             case 5:
                 imageView.setImageResource(R.drawable.elon_musk);
-                textViewScoreName.setText("You are as smart as " + "Elon Musk");
+                textViewScoreName.setText(getString(R.string.you_smart) + getString(R.string.elon));
             case 6:
                 imageView.setImageResource(R.drawable.elon_musk);
-                textViewScoreName.setText("You are as smart as " + "Elon Musk");
+                textViewScoreName.setText(getString(R.string.you_smart) + getString(R.string.elon));
                 break;
             case 7:
                 imageView.setImageResource(R.drawable.albert_einstein);
-                textViewScoreName.setText("You are as smart as " + "Albert Einstein");
+                textViewScoreName.setText(getString(R.string.you_smart) + getString(R.string.albert));
             case 8:
                 imageView.setImageResource(R.drawable.albert_einstein);
-                textViewScoreName.setText("You are as smart as " + "Albert Einstein");
+                textViewScoreName.setText(getString(R.string.you_smart) + getString(R.string.albert));
                 break;
         }
+
+        Button buttonRestart = findViewById(R.id.button_reset);
+        buttonRestart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //ResultActivity.super.onBackPressed();
+                Intent intent = new Intent(ResultActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

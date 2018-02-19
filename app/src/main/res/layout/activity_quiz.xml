@@ -8,6 +8,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!-- Question 1 -->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +38,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Your answer is?"
+                        android:text="@string/q1"
                         android:textSize="16sp" />
 
                     <RadioGroup
@@ -49,23 +50,23 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="10" />
+                            android:text="@string/q1_a1" />
 
                         <RadioButton
                             android:id="@+id/right_answer_math"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="15" />
+                            android:text="@string/q1_a2" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="14" />
+                            android:text="@string/q1_a3" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20" />
+                            android:text="@string/q1_a4" />
                     </RadioGroup>
                 </LinearLayout>
 
@@ -73,6 +74,7 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <!-- Question 2 -->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -104,7 +106,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Who is he?"
+                        android:text="@string/q2"
                         android:textSize="16sp" />
 
                     <RadioGroup
@@ -116,23 +118,23 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Muhammad Ali" />
+                            android:text="@string/q2_a1" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Michael Jordan" />
+                            android:text="@string/q2_a2" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tiger Woods" />
+                            android:text="@string/q2_a3" />
 
                         <RadioButton
                             android:id="@+id/right_answer_usain"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Usain Bolt" />
+                            android:text="@string/q2_a4" />
                     </RadioGroup>
                 </LinearLayout>
 
@@ -140,6 +142,7 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <!-- Question 3 -->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -171,7 +174,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Which is the capital of Romania?"
+                        android:text=""
                         android:textSize="16sp" />
 
                     <RadioGroup
@@ -183,22 +186,22 @@
                             android:id="@+id/right_answer_geography"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bucharest" />
+                            android:text="@string/q3_a1" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Budapest" />
+                            android:text="@string/q3_a2" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Belgrade" />
+                            android:text="@string/q3_a3" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bratislava" />
+                            android:text="@string/q3_a4" />
                     </RadioGroup>
                 </LinearLayout>
 
@@ -206,6 +209,7 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <!-- Question 4 -->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -237,7 +241,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="This logo belongs to which brand?"
+                        android:text="@string/q4"
                         android:textSize="16sp" />
 
                     <RadioGroup
@@ -248,23 +252,23 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Saab" />
+                            android:text="@string/q4_a1" />
 
                         <RadioButton
                             android:id="@+id/right_answer_cars"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Suzuki" />
+                            android:text="@string/q4_a2" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Seat" />
+                            android:text="@string/q4_a3" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ssangyong" />
+                            android:text="@string/q4_a4" />
                     </RadioGroup>
                 </LinearLayout>
 
@@ -272,6 +276,7 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <!-- Question 5 -->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -310,25 +315,25 @@
                             android:id="@+id/wrong_answer_math2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2062" />
+                            android:text="@string/q5_a1" />
 
                         <CheckBox
                             android:id="@+id/right_answer_math2_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2412" />
+                            android:text="@string/q5_a2" />
 
                         <CheckBox
                             android:id="@+id/right_answer_math2_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="1914" />
+                            android:text="@string/q5_a3" />
 
                         <CheckBox
                             android:id="@+id/right_answer_math2_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="1926" />
+                            android:text="@string/q5_a4" />
                     </RadioGroup>
                 </LinearLayout>
 
@@ -336,6 +341,7 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <!-- Question 6 -->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -366,7 +372,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Witch of these countries are in the European Union?"/>
+                        android:text="@string/q6"/>
 
 
                     <RadioGroup
@@ -378,25 +384,25 @@
                             android:id="@+id/wrong_answer_eu1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Switzerland" />
+                            android:text="@string/q6_a1" />
 
                         <CheckBox
                             android:id="@+id/wrong_answer_eu2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Serbia" />
+                            android:text="@string/q6_a2" />
 
                         <CheckBox
                             android:id="@+id/right_answer_eu"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bulgaria" />
+                            android:text="@string/q6_a3" />
 
                         <CheckBox
                             android:id="@+id/wrong_answer_eu3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Russia" />
+                            android:text="@string/q6_a4" />
                     </RadioGroup>
                 </LinearLayout>
 
@@ -404,6 +410,7 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <!-- Question 7 -->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -434,7 +441,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Witch of these car brands are from Germany?"/>
+                        android:text="@string/q7"/>
 
 
                     <RadioGroup
@@ -446,25 +453,25 @@
                             android:id="@+id/wrong_answer_car_brands1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Fiat" />
+                            android:text="@string/q7_a1" />
 
                         <CheckBox
                             android:id="@+id/wrong_answer_car_brands2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Honda" />
+                            android:text="@string/q7_a2" />
 
                         <CheckBox
                             android:id="@+id/wrong_answer_car_brands3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mazda" />
+                            android:text="@string/q7_a3" />
 
                         <CheckBox
                             android:id="@+id/right_answer_car_brands"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Opel" />
+                            android:text="@string/q7_a4" />
                     </RadioGroup>
                 </LinearLayout>
 
@@ -472,6 +479,7 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <!-- Question 8 -->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -502,7 +510,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Witch of these sports have 6 players per team?"/>
+                        android:text="@string/q8"/>
 
 
                     <RadioGroup
@@ -514,25 +522,25 @@
                             android:id="@+id/right_answer_sports"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Volleyball" />
+                            android:text="@string/q8_a1" />
 
                         <CheckBox
                             android:id="@+id/wrong_answer_sports1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Basketball" />
+                            android:text="@string/q8_a2" />
 
                         <CheckBox
                             android:id="@+id/wrong_answer_sports2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Baseball" />
+                            android:text="@string/q8_a3" />
 
                         <CheckBox
                             android:id="@+id/wrong_answer_sports3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Water polo" />
+                            android:text="@string/q8_a4" />
                     </RadioGroup>
                 </LinearLayout>
 
@@ -545,7 +553,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Submit"/>
+            android:text="@string/submit"/>
 
     </LinearLayout>
 

@@ -1,3 +1,74 @@
 <resources>
     <string name="app_name">IQTest</string>
+
+    <string name="congrats">"Congratulations "</string>
+    <string name="submit">Submit</string>
+    <string name="restart">Restart</string>
+    <string name="enter_name">Please enter your name!</string>
+    <string name="ok">OK</string>
+    <string name="you_scored">"You scored "</string>
+    <string name="out_of">" out of 8"</string>
+    <string name="player_name">Player name</string>
+    <string name="start">Start</string>
+
+    <!-- Question 1 -->
+    <string name="q1">Your answer is?</string>
+    <string name="q1_a1">10</string>
+    <string name="q1_a2">15</string>
+    <string name="q1_a3">14</string>
+    <string name="q1_a4">20</string>
+
+    <!-- Question 2 -->
+    <string name="q2">Who is he?</string>
+    <string name="q2_a1">Muhammad Ali</string>
+    <string name="q2_a2">Michael Jordan</string>
+    <string name="q2_a3">Tiger Woods</string>
+    <string name="q2_a4">Usain Bolt</string>
+
+    <!-- Question 3 -->
+    <string name="q3">Which is the capital of Romania?</string>
+    <string name="q3_a1">Bucharest</string>
+    <string name="q3_a2">Budapest</string>
+    <string name="q3_a3">Belgrade</string>
+    <string name="q3_a4">Bratislava</string>
+
+    <!-- Question 4 -->
+    <string name="q4">This logo belongs to which brand?</string>
+    <string name="q4_a1">Saab</string>
+    <string name="q4_a2">Suzuki</string>
+    <string name="q4_a3">Seat</string>
+    <string name="q4_a4">Ssangyong</string>
+
+    <!-- Question 5 -->
+    <string name="q5_a1">2062</string>
+    <string name="q5_a2">2412</string>
+    <string name="q5_a3">1914</string>
+    <string name="q5_a4">1926</string>
+
+    <!-- Question 6 -->
+    <string name="q6">Witch of these countries are in the European Union?</string>
+    <string name="q6_a1">Switzerland</string>
+    <string name="q6_a2">Serbia</string>
+    <string name="q6_a3">Bulgaria</string>
+    <string name="q6_a4">Russia</string>
+
+    <!-- Question 7 -->
+    <string name="q7">Witch of these car brands are from Germany?</string>
+    <string name="q7_a1">Fiat</string>
+    <string name="q7_a2">Honda</string>
+    <string name="q7_a3">Mazda</string>
+    <string name="q7_a4">Opel</string>
+
+    <!-- Question 8 -->
+    <string name="q8">Witch of these sports have 6 players per team?</string>
+    <string name="q8_a1">Volleyball</string>
+    <string name="q8_a2">Basketball</string>
+    <string name="q8_a3">Baseball</string>
+    <string name="q8_a4">Water polo</string>
+
+    <string name="you_smart">"You are as smart as "</string>
+    <string name="albert">Albert Einstein</string>
+    <string name="elon">Elon Musk</string>
+    <string name="donald">Donald Trump</string>
+    <string name="chimp">a chimp</string>
 </resources>

@@ -1,16 +1,16 @@
 package com.example.android.iqtest;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 
 
-public class QuizActivity extends Activity {
+public class QuizActivity extends AppCompatActivity {
 
     private int score;
     private String name;
