@@ -1,562 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <!-- Question 1 -->
-        <android.support.v7.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="8dp">
+            android:orientation="vertical">
 
+            <!-- Question 1 -->
+            <include
+                android:id="@+id/question1"
+                layout="@layout/question1"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <!-- Question 2 -->
+            <include
+                android:id="@+id/question2"
+                layout="@layout/question2"/>
 
-                <ImageView
-                    android:id="@+id/image_math"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_margin="8dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/math"
-                    tools:src="@drawable/ic_launcher_background" />
+            <!-- Question 3 -->
+            <include
+                android:id="@+id/question3"
+                layout="@layout/question3"/>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:orientation="vertical">
+            <!-- Question 4 -->
+            <include
+                android:id="@+id/question4"
+                layout="@layout/question4"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q1"
-                        android:textSize="16sp" />
+            <!-- Question 5 -->
+            <include
+                android:id="@+id/question5"
+                layout="@layout/question5"/>
 
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@id/image_math"
-                        android:layout_marginLeft="16dp">
+            <!-- Question 6 -->
+            <include
+                android:id="@+id/question6"
+                layout="@layout/question6"/>
 
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q1_a1" />
+            <!-- Question 7 -->
+            <include
+                android:id="@+id/question7"
+                layout="@layout/question7"/>
 
-                        <RadioButton
-                            android:id="@+id/right_answer_math"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q1_a2" />
+            <!-- Question 8 -->
+            <include
+                android:id="@+id/question8"
+                layout="@layout/question8"/>
 
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q1_a3" />
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/submit"
+                style="@style/WrapContentStyle" />
 
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q1_a4" />
-                    </RadioGroup>
-                </LinearLayout>
+        </LinearLayout>
 
+    </ScrollView>
 
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+</layout>
 
-        <!-- Question 2 -->
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="8dp">
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image_usain"
-                    android:layout_width="0dp"
-                    android:layout_height="200dp"
-                    android:layout_weight="3"
-                    android:layout_margin="8dp"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/usain_bolt"
-                    tools:src="@drawable/ic_launcher_background" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_weight="2"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q2"
-                        android:textSize="16sp" />
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@id/image_usain"
-                        android:layout_marginLeft="16dp">
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q2_a1" />
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q2_a2" />
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q2_a3" />
-
-                        <RadioButton
-                            android:id="@+id/right_answer_usain"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q2_a4" />
-                    </RadioGroup>
-                </LinearLayout>
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <!-- Question 3 -->
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="8dp">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image_bucharest"
-                    android:layout_width="0dp"
-                    android:layout_height="200dp"
-                    android:layout_weight="3"
-                    android:layout_margin="8dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/bucharest"
-                    tools:src="@drawable/ic_launcher_background" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_weight="2"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textSize="16sp" />
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp">
-
-                        <RadioButton
-                            android:id="@+id/right_answer_geography"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q3_a1" />
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q3_a2" />
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q3_a3" />
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q3_a4" />
-                    </RadioGroup>
-                </LinearLayout>
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <!-- Question 4 -->
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="8dp">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image_suzuki"
-                    android:layout_width="0dp"
-                    android:layout_height="200dp"
-                    android:layout_weight="3"
-                    android:layout_margin="8dp"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/suzuki"
-                    tools:src="@drawable/ic_launcher_background" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_weight="2"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q4"
-                        android:textSize="16sp" />
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp">
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q4_a1" />
-
-                        <RadioButton
-                            android:id="@+id/right_answer_cars"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q4_a2" />
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q4_a3" />
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q4_a4" />
-                    </RadioGroup>
-                </LinearLayout>
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <!-- Question 5 -->
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="8dp">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image_math2"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:scaleType="fitCenter"
-                    android:layout_margin="8dp"
-                    android:src="@drawable/math2"
-                    tools:src="@drawable/ic_launcher_background" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp">
-
-                        <CheckBox
-                            android:id="@+id/wrong_answer_math2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q5_a1" />
-
-                        <CheckBox
-                            android:id="@+id/right_answer_math2_1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q5_a2" />
-
-                        <CheckBox
-                            android:id="@+id/right_answer_math2_2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q5_a3" />
-
-                        <CheckBox
-                            android:id="@+id/right_answer_math2_3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q5_a4" />
-                    </RadioGroup>
-                </LinearLayout>
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <!-- Question 6 -->
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="8dp">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image_eu"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:scaleType="fitCenter"
-                    android:layout_margin="8dp"
-                    android:src="@drawable/eu"
-                    tools:src="@drawable/ic_launcher_background" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q6"/>
-
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp">
-
-                        <CheckBox
-                            android:id="@+id/wrong_answer_eu1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q6_a1" />
-
-                        <CheckBox
-                            android:id="@+id/wrong_answer_eu2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q6_a2" />
-
-                        <CheckBox
-                            android:id="@+id/right_answer_eu"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q6_a3" />
-
-                        <CheckBox
-                            android:id="@+id/wrong_answer_eu3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q6_a4" />
-                    </RadioGroup>
-                </LinearLayout>
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <!-- Question 7 -->
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="8dp">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image_car_brands"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:scaleType="fitCenter"
-                    android:layout_margin="8dp"
-                    android:src="@drawable/car_brands"
-                    tools:src="@drawable/ic_launcher_background" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q7"/>
-
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp">
-
-                        <CheckBox
-                            android:id="@+id/wrong_answer_car_brands1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q7_a1" />
-
-                        <CheckBox
-                            android:id="@+id/wrong_answer_car_brands2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q7_a2" />
-
-                        <CheckBox
-                            android:id="@+id/wrong_answer_car_brands3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q7_a3" />
-
-                        <CheckBox
-                            android:id="@+id/right_answer_car_brands"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q7_a4" />
-                    </RadioGroup>
-                </LinearLayout>
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <!-- Question 8 -->
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="8dp">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image_sports"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:scaleType="fitCenter"
-                    android:layout_margin="8dp"
-                    android:src="@drawable/sports"
-                    tools:src="@drawable/ic_launcher_background" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/q8"/>
-
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp">
-
-                        <CheckBox
-                            android:id="@+id/right_answer_sports"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q8_a1" />
-
-                        <CheckBox
-                            android:id="@+id/wrong_answer_sports1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q8_a2" />
-
-                        <CheckBox
-                            android:id="@+id/wrong_answer_sports2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q8_a3" />
-
-                        <CheckBox
-                            android:id="@+id/wrong_answer_sports3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/q8_a4" />
-                    </RadioGroup>
-                </LinearLayout>
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <Button
-            android:id="@+id/button_submit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/submit"/>
-
-    </LinearLayout>
-
-
-</ScrollView>
 

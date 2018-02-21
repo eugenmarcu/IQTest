@@ -26,9 +26,8 @@
         android:background="@color/cardview_light_background"
         android:orientation="vertical">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/player_name"/>
+            android:text="@string/player_name"
+            style="@style/WrapContentStyle" />
         <EditText
             android:id="@+id/edit_name"
             android:layout_width="200dp"
@@ -39,9 +38,8 @@
             android:layout_height="wrap_content" />
         <Button
             android:id="@+id/button_play"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/start"/>
+            android:text="@string/start"
+            style="@style/WrapContentStyle" />
 
     </LinearLayout>
 

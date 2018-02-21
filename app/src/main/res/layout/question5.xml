@@ -1,0 +1,49 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_math2"
+                style="@style/Question1Style"
+                android:src="@drawable/math2"
+                tools:src="@drawable/ic_launcher_background" />
+
+            <LinearLayout style="@style/LayoutStyle">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp">
+
+                    <CheckBox
+                        android:id="@+id/wrong_answer_math2"
+                        style="@style/WrapContentStyle"
+                        android:text="@string/q5_a1" />
+
+                    <CheckBox
+                        android:id="@+id/right_answer_math2_1"
+                        style="@style/WrapContentStyle"
+                        android:text="@string/q5_a2" />
+
+                    <CheckBox
+                        android:id="@+id/right_answer_math2_2"
+                        style="@style/WrapContentStyle"
+                        android:text="@string/q5_a3" />
+
+                    <CheckBox
+                        android:id="@+id/right_answer_math2_3"
+                        style="@style/WrapContentStyle"
+                        android:text="@string/q5_a4" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>

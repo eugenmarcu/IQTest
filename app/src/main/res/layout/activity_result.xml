@@ -6,43 +6,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
+    android:gravity="center"
     android:layout_margin="16dp">
 
     <TextView
         android:id="@+id/textView_congrats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/congrats"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-         />
+        style="@style/WrapContentStyle" />
 
     <TextView
         android:id="@+id/textView_score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         tools:hint="@string/you_smart"
         tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="62dp" />
+        tools:layout_editor_absoluteY="62dp"
+        style="@style/WrapContentStyle" />
 
-    <TextView
-        android:id="@+id/textView_score_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:hint="@string/you_smart"
-        />
+
     <ImageView
         android:id="@+id/imageView_result"
-        android:layout_width="300dp"
-        android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/negative_result"
          />
 
     <Button
         android:id="@+id/button_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/restart"/>
+        android:text="@string/restart"
+        style="@style/WrapContentStyle" />
 </LinearLayout>

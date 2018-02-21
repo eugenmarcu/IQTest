@@ -10,6 +10,7 @@
     <string name="out_of">" out of 8"</string>
     <string name="player_name">Player name</string>
     <string name="start">Start</string>
+    <string name="negative_result">"I'm not saying that you're stupid but your IQ test came back negative."</string>
 
     <!-- Question 1 -->
     <string name="q1">Your answer is?</string>

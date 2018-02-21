@@ -16,6 +16,9 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String PLAYER_NAME_STRING = "name";
+    public static final String PLAYER_SCORE_STRING = "score";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String name = editText.getText().toString();
                 if(!TextUtils.isEmpty(name)) {
                     Intent intent = new Intent(MainActivity.this, QuizActivity.class);
-                    intent.putExtra("name", name.trim());
+                    intent.putExtra(PLAYER_NAME_STRING, name.trim());
                     startActivity(intent);
                 }
                 else {
